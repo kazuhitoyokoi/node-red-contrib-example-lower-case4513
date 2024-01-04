@@ -1,0 +1,61 @@
+[
+    {
+        "id": "4ab66de38e2ff142",
+        "type": "inject",
+        "z": "dcb1423e3fc420d9",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "AbCdEf",
+        "payloadType": "str",
+        "x": 130,
+        "y": 80,
+        "wires": [
+            [
+                "569571bce389f823"
+            ]
+        ]
+    },
+    {
+        "id": "624cd69ef88a9b84",
+        "type": "debug",
+        "z": "dcb1423e3fc420d9",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 300,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "569571bce389f823",
+        "type": "lower-case",
+        "z": "dcb1423e3fc420d9",
+        "name": "",
+        "x": 210,
+        "y": 160,
+        "wires": [
+            [
+                "624cd69ef88a9b84"
+            ]
+        ]
+    }
+]
